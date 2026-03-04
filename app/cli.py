@@ -26,7 +26,6 @@ def add_project(args):
 
     print("User not found")
 
-
 def add_task(args):
     users = load_users(user_path)
 
@@ -40,7 +39,6 @@ def add_task(args):
                 return
     print("Project not found")
 
-
 def complete_task(args):
     users = load_users(user_path)
 
@@ -53,7 +51,6 @@ def complete_task(args):
                     print("Task completed!")
                     return
     print("Task not found")
-
 
 def list_users_and_data(args):
     users = load_users(user_path)

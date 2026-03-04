@@ -38,7 +38,6 @@ class User(Person):
             "email": self.email,
             "projects": [p.to_dict() for p in self.projects],
         }
-
     @classmethod
     def from_dict(cls, data):
         user = cls(data["name"], data["email"])

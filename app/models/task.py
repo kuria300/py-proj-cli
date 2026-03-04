@@ -21,7 +21,6 @@ class Task:
             "status": self.status,
             "assigned_to": self.assigned_to,
         }
-
     @classmethod
     def from_dict(cls, data):
         task = cls(data["title"], data["assigned_to"])
