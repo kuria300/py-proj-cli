@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Alex",
+        "email": "alex@email.com",
+        "projects": [
+            {
+                "id": 1,
+                "title": "New Website",
+                "description": "Launch by March",
+                "due_date": "2026-03-15",
+                "tasks": [
+                    {
+                        "id": 1,
+                        "title": "Design Homepage",
+                        "status": "completed",
+                        "assigned_to": null
+                    }
+                ]
+            }
+        ]
+    }
+]
