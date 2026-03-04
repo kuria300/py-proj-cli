@@ -17,23 +17,5 @@ class Project:
     def add_task(self, task):
         self.tasks.append(task)
 
-    def to_dict(self):
-        return {
-            "id": self.id,
-            "title": self.title,
-            "description": self.description,
-            "due_date": self.due_date,
-            "tasks": [t.to_dict() for t in self.tasks],
-        }
-
-    @classmethod
-    def from_dict(cls, data):
-        project = cls(data["title"], data["description"], data["due_date"])
-        project._id = data["id"]
-        cls._id_counter = max(cls._id_counter, project._id + 1)
-
-        project.tasks = [Task.from_dict(t) for t in data["tasks"]]
-        return project
-
     def __repr__(self):
         return f"Project(id={self.id}, title='{self.title}')"

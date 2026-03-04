@@ -14,20 +14,6 @@ class Task:
     def complete(self):
         self.status = "completed"
 
-    def to_dict(self):
-        return {
-            "id": self.id,
-            "title": self.title,
-            "status": self.status,
-            "assigned_to": self.assigned_to,
-        }
-    @classmethod
-    def from_dict(cls, data):
-        task = cls(data["title"], data["assigned_to"])
-        task._id = data["id"]
-        task.status = data["status"]
-        cls._id_counter = max(cls._id_counter, task._id + 1)
-        return task
 
     def __repr__(self):
         return f"Task(id={self.id}, title='{self.title}', status='{self.status}')"

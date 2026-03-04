@@ -19,5 +19,26 @@
                 ]
             }
         ]
+    },
+    {
+        "id": 2,
+        "name": "john",
+        "email": "john@email.com",
+        "projects": [
+            {
+                "id": 1,
+                "title": "Website Redesign",
+                "description": "Update the landing page",
+                "due_date": "2026-03-31",
+                "tasks": [
+                    {
+                        "id": 1,
+                        "title": "Create wireframes",
+                        "status": "completed",
+                        "assigned_to": null
+                    }
+                ]
+            }
+        ]
     }
 ]
